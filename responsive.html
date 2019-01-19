@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Image</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		* {
+			margin: 0;	
+			padding: 0;	
+		}
+		
+		body {
+			padding: 0;
+			margin: 0;
+		}
+		h1 {
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Responsive Images</h1>
+
+	<h2>Non Responsive images</h2>
+		<h3>5184w</h3>
+		<img src="horses.jpg"  alt="horses 5750w">
+		<h3>1920w</h3>
+		<img src="horses-1920w.png"  alt="horses 1920w">
+		<h3>1366w</h3>
+		<img src="horses-1366w.jpg"  alt="horses 1366w">
+		<h3>1024w</h3>
+		<img src="horses-10241w.jpg"  alt="horses 1024w">
+		<h3>768w</h3>
+		<img src="horses-768w.jpg"  alt="horses 768w">
+		<h3>425w</h3>
+		<img src="horses-425w.jpg"  alt="horses 425w">
+		<h3>375w</h3>
+		<img src="horses-375w.jpg"  alt="horses 375w">
+		<h3>320w</h3>
+		<img src="horses-320w.jpg"  alt="horses 320w">
+
+
+
+	<h2>Resolution Switching</h2>
+		<img class="horses" srcset="horses-320w.jpg, 
+				horses-768w.jpg 2x, 
+				horses-1024w.jpg 3x"
+				src="horses-320w.jpg"
+				 alt="horses" width="320">
+	<h2>Art Direction</h2>
+</body>
+</html>
